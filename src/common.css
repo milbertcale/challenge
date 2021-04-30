@@ -1,0 +1,113 @@
+.account-wrapper{
+    color:#464646;
+    width: 100%;
+    height: 100%;
+    background-color: #2F4057;
+    position: relative;
+    background-image: url(./assets//bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-blend-mode: overlay;
+}
+
+.account-wrapper>div{
+    height: 60%;
+    width: 100%;
+    background-color: #F5F9FA;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 20px 20px 0px 0px;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/*For mobile number*/
+.country-code-dd-class{
+    width: 100%;
+    height: 100%;
+}
+
+.mobile-num-class{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    border: 1px solid #DDD;
+    margin: 20px 0px;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+
+.mobile-num-class>div:last-child{
+    flex:1;
+    text-align: left;
+}
+
+.login-btn-class{
+    border-radius: 20px !important;
+}
+/*End*/
+
+/*For OTP*/
+.otp-tf-class{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 20px;
+    margin: 20px 0px;
+}
+
+.otp-tf-class>div{
+    flex:1;
+    height: 60px;
+    margin: 5px;
+    font-size: 50px;
+    text-align: center;
+    border-bottom: 3px solid #2F4057;
+}
+
+.otp-tf-class>div>ion-input{
+    background-color: red;
+    caret-color: transparent;
+}
+
+
+.otp-input{
+    background-color: white;
+    width: 100%;
+}
+
+.otp-wrapper{
+    margin: 20px;
+}
+.otp-wrapper>div{
+    flex:1;
+}
+
+.otp-wrapper>div>input{
+    width:100% !important;
+    height: 45px;
+    margin: 10px;
+    font-size: 32px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    background-color: transparent;
+}
+
+/*END*/
+
+
+/**Component**/
+.link-class{
+    padding:0px;
+    margin: 0px;
+    --padding-start:0px;
+    --padding-end:0px;
+    text-transform: none;
+    font-size: 18px;
+}
+
+/*End of Component**/
