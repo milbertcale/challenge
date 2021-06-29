@@ -52,12 +52,15 @@ const Login = ({history})=>{
     }
 
     function performOtp(){
-        window.appVerifier = new firebase.auth.RecaptchaVerifier(
-            "recaptcha-container",
-            {
-              size: "invisible"
-            }
-        );
+        if(window.appVerifier==undefined){
+            window.appVerifier = new firebase.auth.RecaptchaVerifier(
+                "recaptcha-container",
+                {
+                size: "invisible"
+                }
+            );
+        }
+        var element = document.getElementById("recaptcha-container");
         firebaseConfig.auth().signInWithPhoneNumber(`${selectedCode}${mobileNumber}`,window.appVerifier).then(_confirmResult=>{
             setLoggingIn(false);
             window.confirmResult = _confirmResult;
@@ -81,10 +84,12 @@ const Login = ({history})=>{
                     //redirect to the dashboard
                     history.replace('/dashboard');
                 }).catch(error=>{
+                    dismissLoading();
                     presentToast("Error logging in your mobile number",3000);
                 })
                 
             }).catch(error=>{
+                dismissLoading();
                 presentToast("Verification code is wrong. Please try again",3000);
             })
         }

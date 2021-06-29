@@ -17,7 +17,7 @@ function SearchTab(props){
 
     return <div className="search-tab-wrapper-class">
         <h1>Search Instruments</h1>
-        <InstantSearch indexName="search_data" searchClient={searchClient}>
+        <InstantSearch indexName="nasdaq" searchClient={searchClient}>
             <CustomSearchBox />
             <div style={{height:10}}/>
             <IonContent

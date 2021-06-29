@@ -86,10 +86,12 @@ const Register = ({history})=>{
                         firebaseConfig.auth().signOut();
                     },3000);
                 }).catch(error=>{
+                    dismissLoading();
                     presentToast("Error registering your mobile number",3000);
                 })
                 
             }).catch(error=>{
+                dismissLoading();
                 presentToast("Verification code is wrong. Please try again",3000);
             })
         }
