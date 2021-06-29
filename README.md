@@ -8,7 +8,8 @@ Tasks breakdown and flow diagram are included inside docs folder
 
 Some screenshots below which is also in the docs folder
 
-<img src='https://github.com/milbertcale/challenge/blob/master/docs/Screenshot_20210630-015830_challenge.jpg' width='150' height='200'/>
+- Image 1
+<img src='https://github.com/milbertcale/challenge/blob/master/docs/Screenshot_20210630-015830_challenge.jpg' width='150' height='250'/>
 
-![](https://github.com/milbertcale/challenge/blob/master/docs/Screenshot_20210630-015830_challenge.jpg)
-![](https://github.com/milbertcale/challenge/blob/master/docs/Screenshot_20210630-020221_challenge.jpg)
+- Image 2
+<img src='https://github.com/milbertcale/challenge/blob/master/docs/Screenshot_20210630-020221_challenge.jpg' width='150' height='250'/>
