@@ -4,4 +4,4 @@ This is just a demo of how to use algolia to search for stocks and get the detai
 
 Created using reatjs ionic framework
 
-Tasks breakddown and flow diagram is included inside docs folder
+Tasks breakdown and flow diagram are included inside docs folder
